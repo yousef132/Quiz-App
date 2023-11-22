@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: rgb(11, 79, 128);
+}
+
+body {
+    background-color: white
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    text-align: start;
+    border-radius: 10px;
+    box-shadow: rgba(34, 36, 33, 0.24) 0px 0px 45px;
+    animation-duration: .3s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@keyframes move {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.2rem;
+    }
+
+    75% {
+        margin-left: -0.2rem;
+    }
+
+    100% {
+        margin-left: 0rem;
+    }
+}
+
+.animationmove {
+    animation-name: move;
+    animation-duration: 0.2s;
+    animation-iteration-count: 7;
+}
+
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(3, 3, 65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.animationincrease {
+    animation: increase 10s linear 1 ;
+}
+
+.line {
+    background-color: var(--color);
+    height: 3px;
+    border-radius: 2px;
+}
+
+@keyframes increase {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.next {
+    background-color: var(--color);
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 35px;
+    display: none;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    outline: none;
+    border: none;
+    text-align: start;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 20px;
+    background-color: aliceblue;
+    border: 1px solid #84c5fe;
+}
+
+.cl:hover {
+    background-color: rgb(44, 172, 241);
+    color: white;
+    cursor: pointer;
+}
+
+.cl:active {
+    scale: 1.2;
+}
+
+.container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--color);
+}
+
+.title .text {
+    background-color: #00a4ff8a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.title .time {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.text p {
+    display: inline;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer .cur {
+    position: absolute;
+    margin-top: 35px;
+    display: inline;
+    font-size: 20px;
+    right: 0px;
+    color: var(--color);
+}
+
+.title h2 {
+    color: var(--color);
+
+}
+
+.correct {
+    background-color: #9aeabc;
+
+}
+
+.wrong {
+    background-color: #ff9393;
+
+}
